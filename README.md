@@ -1,6 +1,6 @@
 
-# 🛡️ NX-OS Unsaved Large Route Monitor
-> **Cisco NX-OS 저장되지 않은 대형 라우팅 경로(Large Subnet) 감지 및 Syslog 알람 스크립트**
+# 🛡️ NX-OS CLI Configuration Human Error Guard
+> **Cisco NX-OS 의도하지 않은 대형 라우팅 경로(Large Subnet) 설정 감지 및 Syslog 알람 스크립트**
 
 ![Platform](https://img.shields.io/badge/Platform-Cisco%20NX--OS-blue?style=flat-square&logo=cisco)
 ![Language](https://img.shields.io/badge/Language-Python%202.7%20%7C%203.x-yellow?style=flat-square&logo=python)
