@@ -74,6 +74,7 @@ nx(config-schedule)# time start now repeat 0:0:5
 스크립트는 매 실행 시 다음과 같은 로직으로 동작합니다.
 
 show running-config diff 결과 중 + ip route 라인을 추출합니다.
+<img width="486" height="32" alt="스크린샷 2026-02-07 오후 11 01 19" src="https://github.com/user-attachments/assets/ec6fc881-4522-4337-bc6a-f4e41a362790" />
 
 추가된 경로의 **서브넷 마스크(Prefix Length)**를 분석합니다.
 
@@ -82,7 +83,8 @@ show running-config diff 결과 중 + ip route 라인을 추출합니다.
 📢 Syslog 출력 예시
 /23 대역의 경로가 추가되었을 때 발생하는 로그입니다.
 
-<img width="477" alt="스크린샷 2026-02-07 오후 10 47 26" src="https://github.com/user-attachments/assets/e6132efd-97ac-450b-8664-1f5545e7cabe">
+<img width="966" height="14" alt="스크린샷 2026-02-07 오후 11 01 00" src="https://github.com/user-attachments/assets/794942a6-469c-40b9-8ac9-7ad57e474625" />
+
 
 Plaintext
 2026 Feb 07 22:10:11 LEAF_1101 %USER-3-SYSTEM_MSG: UNSAVED_LARGE_NET(/23): + ip route 222.222.222.0/23 211.111.111.111 - logger
