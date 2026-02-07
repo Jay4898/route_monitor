@@ -14,7 +14,7 @@
 
 이 Python 스크립트는 **Cisco NX-OS 스위치**에서 실행되며, 운영자가 `running-config`에 적용했으나 아직 `startup-config`에 **저장하지 않은(Unsaved) 정적 경로(Static Route)** 변경 사항을 실시간으로 모니터링합니다.
 
-특히, 운영자의 실수로 인해 **Prefix Length가 /24보다 작은(광범위한) 네트워크 대역**이 라우팅 테이블에 추가될 경우, 이를 즉시 감지하여 **Syslog 알람(Severity 3)**을 발생시킵니다.
+특히, 운영자의 실수로 인해 Prefix Length가 /24보다 작은(광범위한) 네트워크 대역이 라우팅 테이블에 추가될 경우, 이를 즉시 감지하여 Syslog 알람(Severity 3)을 발생시킵니다.
 
 <br>
 
