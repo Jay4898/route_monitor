@@ -59,7 +59,7 @@ Nexus 스위치의 내장 스케줄러(Scheduler)를 사용하여 스크립트�
 Bash
 nx(config)# scheduler job name route_monitor
 nx(config-job)# python bootflash:/route_monitor.py
-💡 참고: NX-OS 버전에 따라 python 대신 python3 명령어를 사용해야 할 수도 있습니다.
+💡 참고: NX-OS 7 및 Python Library 2.7.5 버전에 맞는 명령어를 사용하였습니다.
 
 2. Schedule 생성
 정의한 Job을 얼마나 자주 실행할지 설정합니다. 아래 예시는 5분 간격으로 실행하는 설정입니다.
@@ -67,8 +67,8 @@ nx(config-job)# python bootflash:/route_monitor.py
 Bash
 nx(config)# scheduler schedule name check_routes
 nx(config-schedule)# job name route_monitor
-nx(config-schedule)# time start now repeat 0:0:5
-설정이 완료되면 스케줄러가 즉시 시작되며, 5분마다 라우팅 변경 사항을 검사합니다.
+nx(config-schedule)# time start now repeat 0:0:1
+설정이 완료되면 스케줄러가 즉시 시작되며, 1분마다 라우팅 변경 사항을 검사합니다. 최소 주기는 1분입니다
 
 🕵️ 감지 로직 및 알람
 스크립트는 매 실행 시 다음과 같은 로직으로 동작합니다.
